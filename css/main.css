@@ -87,7 +87,7 @@ textarea {
    Author's custom styles
 ============================================================================= */
 
-h1, h2, h3, p, a {
+h1, h2, h3, p, a, .swapi {
   font-family: 'Righteous', cursive;
 }
 
@@ -95,29 +95,47 @@ h1, h2, h3, p, a {
 
 header {
   background-image: url(../img/FSSW_header_bg.jpg);
-  background-size: 100% auto;
-  background-position: bottom 700px left;
+  /* background-size: 100% auto; */
+  /* background-position: bottom 700px left; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 .headerTitle {
-  font-size: 5em;
+  font-size: 7vw;
   text-shadow: 0 0 4px #fff;
 }
 
 .headerText {
-  font-size: 2em;
+  font-size: 3vw;
   text-shadow: 0 0 4px #fff;
 }
 
 
 /* ###############################################   NAV   ###################################################### */
 
+.navbar-toggler {
+  border-color: #1758a8;
+}
+
+
 
 
 /* ###############################################   MAIN   ###################################################### */
 
+.swapi {
+  font-size: 2.5vw;
+}
 
+.darkblue {
+  background-color: #1758a8;
+}
 
+.mar {
+  margin-bottom: 8vh;
+}
 /* ###############################################   FOOTER   ###################################################### */
 
 
