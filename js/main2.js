@@ -5,13 +5,12 @@ let httpRequest = new XMLHttpRequest();
 httpRequest.onreadystatechange = function() {
   if (httpRequest.readyState === XMLHttpRequest.DONE) {
     if (httpRequest.status === 200) {
-        let data = JSON.parse(httpRequest.responseText);
-        console.log(data);
-        let list = document.getElementById("swapi");
-        for(things in data) {
-            list.innerHTML += "<div>" + things + "</div>";
-        }
-       
+      let data = JSON.parse(httpRequest.responseText);
+      console.log(data);
+      let list = document.getElementById("swapi2");
+      for(things in data) {
+          list.innerHTML += "<div>" + things + "</div>";
+      }
     }
   } else {
     // pas encore prête
@@ -20,8 +19,5 @@ httpRequest.onreadystatechange = function() {
 };
 
 // Envoi de la requête au serveur
-httpRequest.open('GET', "https://swapi.dev/api/");
+httpRequest.open('GET', "https://swapi.dev/api/people/?search=r2");
 httpRequest.send()
-
-
-// https://swapi.dev/api/
